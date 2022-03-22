@@ -1,9 +1,9 @@
-# Sistema de Cadastro de Contatos Virtual
+﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+// for details on configuring this project to bundle and minify static web assets.
 
-Código para funcionar a paginação e a tradução dos componentes de busca
+// Write your JavaScript code.
 
-<pre>
-  
+$(document).ready(function () {
     $('#table-contatos').DataTable({
         "ordering": true,
         "paging": true,
@@ -32,5 +32,8 @@ Código para funcionar a paginação e a tradução dos componentes de busca
             }
         }
     });
-  
-</pre>
+})
+
+$('.close-alert').click(function() {
+    $(".alert").hide('hide');
+});
